@@ -1,19 +1,18 @@
 #include<stdio.h>
 int main()
 {
-    int n,k,i,sum=0;
-   while(scanf("%d%d",&n,&k)!=EOF)
-    while(n>=k)
-    {
-        for(i=1;i<+n;i++){
-    n=n-k+1;
+long long int n,k,sum;
+while(scanf("%lld%lld",&n,&k)!=EOF)
+{ sum=0;
+while(n>=k)
+{
 
-   sum=sum+k+n;
-
-
-    }
-
-    printf("%d\n",sum);
-    }
-    return 0;
-    }
+n=n-k;
+sum=sum+k;
+n=n+1;
+}
+sum=sum+n;
+printf("%lld\n",sum);
+}
+return 0;
+}

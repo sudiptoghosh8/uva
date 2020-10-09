@@ -8,9 +8,7 @@ int main()
   while(gets(a))
   {
     gets(b);
-    add1=0;
-    sum1=0;
-    sum2=0;
+    add1=0;  sum1=0; sum2=0;
 for(i=0;i<strlen(a);i++)
  {
   if(a[i]>='A' && a[i]<='Z')
